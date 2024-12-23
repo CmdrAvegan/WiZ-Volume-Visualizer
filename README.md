@@ -48,12 +48,13 @@ This README provides a detailed guide to the program's features, setup, and conf
 1. Open the application.
 2. Navigate to the audio settings in the GUI.
 3. Select your desired audio input device from the dropdown menu.
-4. Click **Save** to apply the changes.
+4. Click **Save Configuration** to apply the changes.
 
 ### Light Configuration
-1. Enter the IP address of your WiZ light(s) in the provided field.
-2. For multiple lights, enter each IP address separated by commas.
-3. Click **Save** to confirm.
+1. Enter the IP address of your WiZ light(s) in the provided field or use the Auto-detect IP.
+2. For multiple lights, enter one IP Address then click ADD or use Auto-detect.
+3. Remove any light's IP from the list you do not wish to use.
+4. Click **Save Configuration** to confirm.
 
 ### Customizing Visual Effects
 1. Adjust brightness, thresholds, and other settings directly in the GUI.
@@ -62,7 +63,7 @@ This README provides a detailed guide to the program's features, setup, and conf
    - Interpolation
    - Beat and drum break detection
 3. Configure vivid, beat, and drum break color profiles.
-4. Click **Apply** to save and activate your settings.
+4. Click **Save Configuration** to save and activate your settings. Settings are automatically saved when starting the visualizer.
 
 ---
 
