@@ -64,9 +64,10 @@ This README provides a detailed guide to the program's features, setup, and conf
 
 ### Light Configuration
 1. Enter the IP address of your WiZ light(s) in the provided field.
-2. For multiple lights, enter each IP address separated by commas.
-3. Use the auto-detect feature to discover lights on your network.
-4. Click **Save** to confirm.
+2. For multiple lights, enter each IP address individually or use auto-detect.
+3. Use the auto-detect feature to discover lights on your network and add them to the list.
+4. Remove any lights you do not wish to be used from the list.
+5. Click **Save** to confirm.
 
 ### Customizing Visual Effects
 1. Adjust brightness, thresholds, and other settings directly in the GUI.
@@ -113,7 +114,7 @@ If Stereo Mix is unavailable, follow these steps:
    - In the GUI, choose **Voicemeeter Output** as the audio device.
 
 #### Step 4: Test the Setup
-- Play audio and verify that the program detects and visualizes the input.
+- Play audio and verify that the program detects and visualizes the input. If you notice the program processing audio when no audio is present please adjust your audio volume in Voicemeeter or Stereo Mix audio levels in 'properties'.
 
 ---
 
