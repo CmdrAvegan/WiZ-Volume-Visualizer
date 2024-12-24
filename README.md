@@ -1,8 +1,8 @@
-# WiZ Light Audio Volume Visualizer
+# README for WiZ Volume Audio Visualizer
 
 ## Overview
 
-The **WiZ Light Audio Volume Visualizer** is a dynamic application that synchronizes your WiZ smart lights with audio input to create stunning, real-time lighting effects. Featuring a user-friendly GUI and extensive customization options, this program empowers users to control their lights effortlessly.
+The **WiZ Volume Audio Visualizer Program** is a dynamic application that synchronizes your WiZ smart lights with audio input to create stunning, real-time lighting effects. Featuring a user-friendly GUI and extensive customization options, this program empowers users to control their lights effortlessly.
 
 This README provides a detailed guide to the program's features, setup, and configuration.
 
@@ -15,12 +15,24 @@ This README provides a detailed guide to the program's features, setup, and conf
 - Includes dynamic brightness and smooth color transitions.
 
 ### Comprehensive GUI Configuration
-- Set your audio device and light IP address directly from the GUI.
-- Modify all program variables and options, including:
-  - Brightness settings
-  - Visualization thresholds
-  - Detection toggles (e.g., beat and drum break detection)
-  - Color profiles
+- **Audio Settings**:
+  - Select audio devices from a dropdown menu.
+  - Enable manual input for device indices.
+  - Adjust advanced audio processing settings such as sample rate and buffer size.
+- **Light Configuration**:
+  - Add, remove, or auto-detect WiZ light IP addresses.
+  - Set UDP port for communication.
+- **Visualization Settings**:
+  - Adjust thresholds for beat and drum break detection.
+  - Configure intensity and smoothing settings for effects.
+- **Brightness Settings**:
+  - Set user-defined and minimum brightness levels.
+  - Enable or disable dynamic brightness adjustment.
+- **Feature Toggles**:
+  - Toggle options like color reversal, beat detection, and tempo-based intensity.
+- **Color Profiles**:
+  - Define vivid, beat, and drum break colors using a color picker.
+  - Preview RGB values and adjust dynamically.
 - Automatically saves configurations to `volume_config.json`, eliminating the need for manual file edits.
 
 ### Advanced Audio Effects
@@ -47,14 +59,14 @@ This README provides a detailed guide to the program's features, setup, and conf
 ### Audio Device Setup
 1. Open the application.
 2. Navigate to the audio settings in the GUI.
-3. Select your desired audio input device from the dropdown menu.
-4. Click **Save Configuration** to apply the changes.
+3. Select your desired audio input device from the dropdown menu or enable manual input to specify the device index.
+4. Click **Save** to apply the changes.
 
 ### Light Configuration
-1. Enter the IP address of your WiZ light(s) in the provided field or use the Auto-detect IP.
-2. For multiple lights, enter one IP Address then click ADD or use Auto-detect.
-3. Remove any light's IP from the list you do not wish to use.
-4. Click **Save Configuration** to confirm.
+1. Enter the IP address of your WiZ light(s) in the provided field.
+2. For multiple lights, enter each IP address separated by commas.
+3. Use the auto-detect feature to discover lights on your network.
+4. Click **Save** to confirm.
 
 ### Customizing Visual Effects
 1. Adjust brightness, thresholds, and other settings directly in the GUI.
@@ -62,8 +74,8 @@ This README provides a detailed guide to the program's features, setup, and conf
    - Dynamic brightness
    - Interpolation
    - Beat and drum break detection
-3. Configure vivid, beat, and drum break color profiles.
-4. Click **Save Configuration** to save and activate your settings. Settings are automatically saved when starting the visualizer.
+3. Configure vivid, beat, and drum break color profiles using the color picker.
+4. Click **Apply** to save and activate your settings.
 
 ---
 
@@ -76,7 +88,7 @@ This README provides a detailed guide to the program's features, setup, and conf
    - Locate **Stereo Mix**, right-click, and select **Enable**.
 2. **Set Stereo Mix as the Default Device**:
    - Right-click **Stereo Mix** and choose **Set as Default Device**.
-3. Select Stereo Mix in the GUI as your audio device.
+3. Select Stereo Mix in the GUI as your audio device. (Select the Stereo Mix with the correct device index and configurations.)
 
 ### Option 2: Using VB Audio Cable and Voicemeeter
 If Stereo Mix is unavailable, follow these steps:
@@ -116,6 +128,8 @@ Enable debug logging in the GUI to save detailed logs to `wiz_vis_debug_log.txt`
 - [PortAudio](http://www.portaudio.com/): Audio processing.
 - [Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html): UDP communication.
 - [nlohmann/json](https://github.com/nlohmann/json): JSON parsing.
+- [PyQt5](https://pypi.org/project/PyQt5/): GUI framework.
+- [pywizlight](https://pypi.org/project/pywizlight/): WiZ light control.
 
 ---
 
